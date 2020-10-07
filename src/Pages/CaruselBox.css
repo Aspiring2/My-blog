@@ -1,0 +1,19 @@
+
+
+.caption-position {
+  margin-bottom: 15vh;
+  vertical-align: center;
+  background: rgba( 117, 117, 117, 0.4);
+ 
+}
+
+h1 {
+font-size: 100px;
+color: aqua;
+}
+
+p {
+  font-size: 25px;
+  color: black;
+}
+
