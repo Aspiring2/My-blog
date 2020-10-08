@@ -12,7 +12,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "../Pages/Home";
 import Articles from "../Pages/Articles";
-// import Resume from "../Pages/Resume";
+import List from "../Pages/List/List";
 import Projects from "../Pages/Projects";
 import Contacts from "../Pages/Contacts"
 
@@ -38,7 +38,7 @@ export default class Header extends Component {
               <Nav className="mr-auto">
                 <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/articles">Articles</Nav.Link>
-                {/* <Nav.Link href="/resume">Resume</Nav.Link> */}
+                <Nav.Link href="/list">List</Nav.Link>
                 <Nav.Link href="/projects">Projects</Nav.Link>
                 <Nav.Link href="/contacts">Contacts</Nav.Link>
               </Nav>
@@ -58,7 +58,7 @@ export default class Header extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/articles" component={Articles} />
-            {/* <Route path="/resume" component={Resume} /> */}
+            <Route path="/list" component={List} />
             <Route path="/projects" component={Projects} />
             <Route path="/contacts" component={Contacts} />
           </Switch>
